@@ -6,14 +6,14 @@
 
 # JPA Inheritance Strategies
 
-• **MappedSuperclass** - Abstract parent class, parent is not in the database
-• **Table per Class** - Similar to MappedSuperClass, but each type is assigned a database table
-• **Single Table** - Single table is used, has properties for all types, uses discriminator value to determine the type database row is mapped to
-• **Joined Table** - Each type has a table, sub-types are joined
+* **MappedSuperclass** - Abstract parent class, parent is not in the database
+* **Table per Class** - Similar to MappedSuperClass, but each type is assigned a database table
+* **Single Table** - Single table is used, has properties for all types, uses discriminator value to determine the type database row is mapped to
+* **Joined Table** - Each type has a table, sub-types are joined
 
 # JPA Inheritance Which to Use?
 
-• **MappedSuperclass** - Good for common entity properties
-• **Table per Class** - Best option for performance, optimal for most use cases
-• **Single Table** - Best when you need to make polymorphic queries, but can’t use not null constraints on subclass attributes & can lead to data inconsistencies
-• **Joined Table** - When you need polymorphic queries and need data consistency (you can use Not Null constraints on subtypes)
+* **MappedSuperclass** - Good for common entity properties
+* **Table per Class** - Best option for performance, optimal for most use cases
+* **Single Table** - Best when you need to make polymorphic queries, but can’t use not null constraints on subclass attributes & can lead to data inconsistencies
+* **Joined Table** - When you need polymorphic queries and need data consistency (you can use Not Null constraints on subtypes)
